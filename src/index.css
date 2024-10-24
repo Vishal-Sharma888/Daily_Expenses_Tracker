@@ -1,0 +1,57 @@
+:root {
+  /* Global variables to be defined here */
+  --color-white: #ffffff;
+  --color-green: #B5DC52;
+  --color-orange: #F4BB4A;
+  --color-red: #FF3E3E;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #3B3B3B;
+  font-family: Ubuntu;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}

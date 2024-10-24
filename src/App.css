@@ -1,0 +1,12 @@
+
+main{
+  height: 100vh;
+  overflow-y: auto;
+  background-color: rgb(139, 139, 247);
+  width: 100vw;
+  padding: 1rem;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

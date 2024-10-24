@@ -1,0 +1,96 @@
+
+.Modal{
+    /* width: 100vw;
+    height: 100vh; */
+    background-color: rgba(255, 255, 255, 0.418);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalBody{
+    background-color: #EFEFEF;
+    border-radius: 0.5rem;
+    max-width: 90vw;
+    width: 538px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.modalForm{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+.formInputsDiv{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+}
+.incomeInput{
+    /* background-color: rebeccapurple; */
+}
+.formButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.modalHead{
+    font-size: 1.875rem;
+    color: black;
+}
+
+.formInput{
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--color-white);
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem;
+}
+.formInput, .modalBody button{
+    -webkit-box-shadow: 0px 4px 4px 1px rgb(200, 200, 200);
+    -moz-box-shadow: 0px 4px 4px 1px rgb(200, 200, 200);
+    box-shadow: 0px 4px 4px 1px rgb(200, 200, 200);
+}
+.balanceFormInputDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.balanceFormInputDiv input{
+    width: 100%;
+}
+
+/* screens bigger than mobile */
+@media screen and (min-width: 780px) {
+    .formInputsDiv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+    .balanceFormInputDiv{
+        width: 200px;
+    }
+    .formInput{
+        width: 200px;
+    }
+    .balanceForm{
+        flex-wrap: nowrap;
+    }
+    .balanceForm button{
+        padding: 0.5rem 1rem !important;
+    }
+}

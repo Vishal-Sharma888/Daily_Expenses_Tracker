@@ -1,0 +1,43 @@
+
+.TransactionBar{
+    width: 100%;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.507); 
+    padding: 0.5rem 0.25rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 0.5rem;
+    font-weight: 300;
+}
+
+.transactionIcon{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #d8d9d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.transactionIcon img{
+    max-width: 25px;
+}
+.TransactionBarBody{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    font-size: 1rem;
+}
+.TransactionText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.TransactionDate{
+    opacity: 0.7;
+}
+.TransactionAmount{
+    font-weight: 400;
+}
